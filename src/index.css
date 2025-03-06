@@ -1,0 +1,264 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+/* body{
+  background-color: grey;
+} */
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+  width: 98%;
+  position: fixed;
+  margin-bottom: 50px !important;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Links */
+.nav-links{
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Category Dropdown */
+.nav-category select {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Search Bar */
+.nav-search input {
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+/* Cart Icon */
+.nav-cart {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav-cart:hover {
+  color: #ffcc00;
+}
+/* Footer */
+/* Footer Container */
+.footer {
+  background-color: #172337;
+  color: white;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer Sections */
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
+
+/* Individual Footer Column */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  min-width: 200px;
+}
+
+/* Footer Headings */
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+/* Footer Links */
+.footer-column a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  transition: 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #ffcc00;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* product */
+/* Product Container */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Product Card */
+.product-card {
+  background: white;
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+/* 
+.product-card:hover {
+  transform: scale(1.05);
+} */
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Product Details */
+.product-details h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-model,
+.product-price,
+.product-type,
+.product-space {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Buy Now Button */
+.buy-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.buy-button:hover {
+  background-color: #e64a19;
+}
+
+/* Detailing page */
+/* ProductDetail.css */
+.product-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  /* min-height: 100vh; */
+}
+
+.product-detail-card {
+  display: flex;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+}
+
+.product-detail-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.product-detail-info {
+  flex: 1;
+}
+
+.product-detail-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-detail-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.product-detail-type,
+.product-detail-space,
+.product-detail-camera,
+.product-detail-battery,
+.product-detail-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.buy-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #e64a19;
+}
+
+.not-found {
+  text-align: center;
+  font-size: 22px;
+  color: red;
+  margin-top: 50px;
+}
