@@ -19,7 +19,7 @@ const App = () => {
           <Route path='/' element={<Product productList={data} cart={cart} setCart={setCart} />} />
           <Route path='/product/:id' element={<ProductDetail/>}  cart={cart} setCart={setCart} />
           <Route path='/cart' element={<Cart cart={cart} setCart={setCart} />} />
-          <Route path='/search/:term' element={<Search  />} />
+          <Route path='/search/:term' element={<Search  />} cart={cart} setCart={setCart} />
           
         </Routes>
         <Footer />

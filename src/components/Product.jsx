@@ -1,5 +1,4 @@
 import React from "react";
-// import productList from "./data.js";
 import { Link } from "react-router-dom";
 import Crousel from './Crousel'
 const Product = ({productList,cart,setCart}) => {
@@ -13,7 +12,7 @@ const Product = ({productList,cart,setCart}) => {
           img
         };
         setCart([...cart,obj])
-        // console.log(cart)
+        console.log(cart)
       }
 
   return (

@@ -7,14 +7,13 @@ const Search = () => {
     const [searchTerm, setSearchTerm] = useState([]);
     const { term } = useParams();
 
-    useEffect(() => {
-        const filterData = () => {
-          const data = productList.filter((s) => s.model.toLowerCase().includes(term.toLowerCase()))||s.brand.toLowerCase().includes(term.toLowerCase())
-          setSearchTerm(data);
-        }
-        filterData();
-    }, [term]);
-
+  useEffect(()=>{
+    const data=()=>{
+        const filterData=productList.filter((s)=>s.brand.toLowerCase().includes(term.toLowerCase())||s.type.toLowerCase().includes(term.toLowerCase()));
+        setSearchTerm(filterData);
+    }
+    data();
+  },[term])
     return (
         <div>
             <Product productList={searchTerm} />

@@ -1,14 +1,21 @@
 import React from 'react';
-const Cart = ({cart,setCart}) => {
+
+const Cart = ({ cart, setCart }) => {
+  console.log(cart);  // This will log the cart array, which contains all product objects.
+
   return (
     <div>
-      <h1>Cart</h1>
-      {cart.map((item) => (
-        <div key={item.id} style={{ border: '1px solid #ddd', padding: '10px', margin: '10px', borderRadius: '5px' }}>
-          <img src={item.img} alt={item.model} style={{ width: '100px', height: '100px' }} />
-          <h2>{item.brand} {item.model}</h2>
-          <p>{item.description}</p>
-          <p>Price: ₹{item.price}</p>
+      <h2>Your Cart</h2>
+      {/* Mapping over the cart array and displaying product details */}
+      {cart.map((product) => (
+        <div key={product.id} className="cart-item">
+          <img src={product.img} alt={product.model} className="product-img" />
+          <div className="product-details">
+            <h3>{product.brand}</h3>
+            <p>{product.model}</p>
+            <p>{product.description}</p>
+            <span>Price: ₹{product.price}</span>
+          </div>
         </div>
       ))}
     </div>

@@ -262,3 +262,36 @@
   color: red;
   margin-top: 50px;
 }
+/* cart */
+.cart-item {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.product-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-details h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.product-details p {
+  margin: 5px 0;
+}
+
+.product-details span {
+  font-weight: bold;
+}
